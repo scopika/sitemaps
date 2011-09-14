@@ -1,0 +1,19 @@
+Options +FollowSymlinks
+
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+###############
+## Les 2 lignes suivantes concernent le plugin sitemaps
+###############
+RewriteRule ^robots[.]txt$		index.php?fond=robots [QSA,L]
+RewriteRule ^sitemap[.]xml$     index.php?fond=sitemap [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^([a-zA-Z_.\-0-9]+)$ index.php?url=$1 [L,QSA]
+
+</IfModule> 

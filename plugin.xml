@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<plugin>
+	<nom>Sitemaps</nom>
+ 	<version>1.0</version>
+ 	<prefix>sitemaps</prefix>
+	<type>classique</type>
+ 	<auteur>Scopika.com</auteur>
+ 	<thelia>1.4.0</thelia>
+ 	<description>
+ 		Ce plugin génère les fichiers robots.txt et sitemap.xml
+ 		&lt;br/&gt; Création : &lt;a href="http://wwww.scopika.com" style="color:#FF0066"&gt;Agence Scopika&lt;/a&gt;
+ 	</description>
+	<documentation>Readme.txt</documentation>
+ 	<etat>attente</etat>
+</plugin>

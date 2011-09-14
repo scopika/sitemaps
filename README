@@ -1,0 +1,22 @@
+>> Présentation
+Ce plugin génère les fichiers robots.txt et sitemap.xml
+
+
+>> Installation
+- glisser le répertoire sitemaps/ dans le dossier client/plugins/ de votre Thelia 
+- activer le plugin.
+- Ajouter dans votre fichier .htaccess les règles de réécriture suivantes : 
+RewriteRule ^robots[.]txt$		index.php?fond=robots [QSA,L]
+RewriteRule ^sitemap[.]xml$     index.php?fond=sitemap [QSA,L]
+
+Un fichier htaccess-modif est inclu dans le dossier du plugin à titre d'exemple
+
+>> Personnalisation
+Les fichiers robots.txt et sitemap.xml peuvent être surchargés en créant un fichier robots.html dans votre dossier de template.
+
+
+>> Log version:
+v1.0: Création du plugin
+
+
+>> Auteur : www.scopika.com
